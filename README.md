@@ -12,5 +12,10 @@ scarica le lora per flux: https://huggingface.co/Asprho/megalora/tree/main
 scarica lora per ltx 2.3 : https://civitai.com/models/2535622/ltx-23-enhancers?modelVersionId=2849716
 su civitai e nel file lora_ltx.txt; trovi altri lora da scaricare,
 
+I modelli Base di ltx 2.3 e altri modelli necessari si scaricheranno in automatico, se vuoi usare un modello di base per ltx trovalo su civitai app consente di aggiungerli.
+
+RUN: python ltx.py
+
+
 
 
