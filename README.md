@@ -1,20 +1,38 @@
-Crea cortometraggi e video con flux 2 9B  (begin frame) e LTX 2.3 quatitizzato(nfp4) con sequenza personalizzabile di frames da 9 a 121 per 
-Clip alla volta per limitare uso della Vram a 8/10GB ; app ( images/video) ottimizzata  al massimo per funzionare su schede fascia bassa. 
-Crea fotogrammi chiavi con flux 2 con  lora e crea le clip per animarla.
-clona repo: git clone https://github.com/asprho-arkimete/make-short-film.git
+# Make Short Film
+
+Crea cortometraggi e video con **FLUX.2 9B** (frame iniziale) e **LTX 2.3 quantizzato (NVFP4)**.
+
+- Sequenza di frame personalizzabile, da 9 a 121 frame per clip, una clip alla volta, per limitare l'uso della VRAM a 8-10 GB.
+- App (immagini/video) ottimizzata al massimo per funzionare su schede video di fascia bassa.
+- Crea i fotogrammi chiave con FLUX.2 (con LoRA) e poi li anima generando le clip.
+
+## Installazione
+
+```bash
+git clone https://github.com/asprho-arkimete/make-short-film.git
 cd make-short-film
-crea ambiente virtuale: python -m venv vmake
-attiva: cd vmake\Scripts - activate
-
+python -m venv vmake
+vmake\Scripts\activate
 pip install -r requirements.txt
+```
 
-scarica le lora per flux: https://huggingface.co/Asprho/megalora/tree/main
-scarica lora per ltx 2.3 : https://civitai.com/models/2535622/ltx-23-enhancers?modelVersionId=2849716
-su civitai e nel file lora_ltx.txt; trovi altri lora da scaricare,
+## LoRA
 
-I modelli Base di ltx 2.3 e altri modelli necessari si scaricheranno in automatico, se vuoi usare un modello di base per ltx trovalo su civitai app consente di aggiungerli.
+- **FLUX.2**: https://huggingface.co/Asprho/megalora/tree/main
+- **LTX 2.3**: https://civitai.com/models/2535622/ltx-23-enhancers?modelVersionId=2849716
+- Altri LoRA da scaricare sono elencati su Civitai e nel file `lora_ltx.txt`.
 
-RUN: python ltx.py
+## Modelli
+
+I modelli base di LTX 2.3 e gli altri modelli necessari si scaricano automaticamente. Se preferisci un altro modello base per LTX, puoi trovarlo su Civitai: l'app permette di aggiungerlo.
+
+## Avvio
+
+```bash
+python ltx.py
+```
+
+Maggiori dettagli nel [README](https://github.com/asprho-arkimete/make-short-film/blob/main/README.md).
 
 
 
